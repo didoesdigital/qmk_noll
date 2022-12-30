@@ -440,7 +440,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     STN_RES1,   STN_N1, STN_N2, STN_N3, STN_N4,  STN_N5,   STN_N6,  STN_N7, STN_N8, STN_N9, STN_NA, STN_FN,      
     TO(NKRO),   STN_S1, STN_TL, STN_PL, STN_HL, STN_ST1,   STN_ST3, STN_FR, STN_PR, STN_LR, STN_TR, STN_DR,
     MO(SYMBOL), STN_S2, STN_KL, STN_WL, STN_RL, STN_ST2,   STN_ST4, STN_RR, STN_BR, STN_GR, STN_SR, STN_ZR,
-                                 STN_A,  STN_O,  STN_NB,   STN_NC,   STN_E,  STN_U 
+                            MO(SYMBOL),  STN_A,   STN_O,   STN_E,    STN_U, STN_NC
   ),
 
   [NKRO] = LAYOUT(
@@ -466,9 +466,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [SYMBOL] = LAYOUT(
     KC_TAB,     KC_1,    KC_2,    KC_3,    KC_4,      KC_5,   KC_6,        KC_7,      KC_8,     KC_9,    KC_0,   KC_SCLN,
-    _______, KC_EXLM,   KC_AT,   KC_LT,   KC_GT, KC_BSLS,   KC_DQT,    KC_PLUS,  KC_MINS, KC_SLASH, KC_ASTR,    KC_TAB,
-    _______, KC_PERC, KC_CIRC, KC_LBRC, KC_RBRC,  KC_GRAVE,   KC_MINS,   KC_AMPR, KC_EQUAL,  KC_COMM,  KC_DOT, KC_RSFT,
-                                KC_LCTL, KC_SPACE, KC_ESC,   KC_ENTER, KC_SPACE, KC_RALT
+    _______, KC_LCTL, KC_LGUI, KC_LALT, KC_LSFT,   KC_BSLS,   KC_DQT,    KC_PLUS,  KC_MINS, KC_SLASH, KC_ASTR,    KC_TAB,
+    _______, KC_LCTL, KC_LGUI, KC_LALT, KC_LSFT,  KC_GRAVE,   KC_MINS,   KC_AMPR, KC_EQUAL,  KC_COMM,  KC_DOT, KC_RSFT,
+                               _______, KC_SPACE, KC_ESC,   KC_ENTER, KC_SPACE, KC_RALT
   )
 };
 
